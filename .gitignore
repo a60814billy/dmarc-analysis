@@ -1,3 +1,5 @@
 node_modules
 .DS_*
 .idea
+dist
+out

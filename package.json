@@ -1,12 +1,33 @@
 {
-  "name": "dmarc-analy",
+  "name": "dmarc-analysis",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a web analysis tool for DMARC report",
+  "main": "src/App.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "DMARC",
+    "email",
+    "web"
+  ],
+  "author": "Raccoon Li",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^13.7.1",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }
